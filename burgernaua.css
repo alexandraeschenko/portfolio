@@ -1,0 +1,216 @@
+*{                      /*выделили все содержимое страницы*/
+    padding: 0;         /*отменили отступы внутри элементов*/
+    margin: 0;          /*отменили отступы вокруг элементов*/
+}
+
+html {
+    box-sizing:border-box;/*устанавливает тип модели контента для элементов как border-box (размеры элементов будут включать padding и boarder, но не margin*/
+}
+
+body {
+    margin: 0 auto;  /*устанавливаем авто отступ сверху и снизу и авто выравниваем по горизонтали*/
+    height: 100%; /*от высоты родительского элемента*/
+    flex-direction:column; /*устанавливает направление главной оси контейнера в вертикальное*/
+    font-weight: 500; /*толщина шрифта*/
+    font-size: 35px;  /*размер шрифта*/
+    line-height: 43px; /*высота строки*/
+    color: #000000;
+    background: #FFFFFF;
+}
+
+.food_header {
+    width: 1900px;
+    min-height: 900px;
+    background-image: linear-gradient(180deg, #EDA418 40%, rgba(237, 164, 24, 0) 100%);
+}
+
+.navigation {
+    display: flex; /*устанавливаем элемент display как flex контейнер. Flex перемещает элемент на новую строку, если не помещается в одну*/
+    flex-wrap: wrap;
+    justify-content: center; /*чтобы все элементы были в центре*/
+    margin-left: 150px;
+    min-height: 70px;
+    padding-top: 105px; /*отступ*/
+    padding-right: 65px; /*внутренний отступ*/
+}
+
+.logo {
+    display: block;  /*как блочный элемент*/
+    margin-top: 8px; /*внешний отступ*/
+}
+
+.navigation_header{
+    display: flex;
+    flex-wrap: wrap;   /*элементы будут перенесены на несколько строк сверху вниз*/
+    gap: 30px;       /*задает промежуток между элементами*/
+    margin: auto;  /*отступ со всех сторон внешний*/
+    padding: 0;   /*отступ со всех сторон внутренний*/
+    margin-left: 150px;
+    list-style: none;  /*Нет пунктов списка*/
+}
+
+.navigation_title_main{
+    display:block;
+    min-width: 200px;  /*для предотвращения уменьшения ширины элемента ниже заданного значения*/
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;   /*Высота строки*/
+    text-decoration: none; /*Убрала подчеркивание*/
+    color: #000000;
+}
+
+.navigation_button {
+    display: inline-block;  /*элемент отображается как строчный элемент, но его содержимое может быть отформатировано как блок*/
+    width: 70px;
+    height: 70px;
+    background-color: #000000;
+    border: none;
+    border-radius: 100px;
+}
+
+.container_page_header{
+    display: flex;
+    padding-top: 25px;
+    gap: 20px;
+    padding-left: 30px;
+}
+
+.container_header{
+    width: 600px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navigation_container_header{
+    margin: 0;
+    padding: 0;
+    padding-top: 190px;
+    font-weight: 800;
+    font-size: 33px;
+    line-height: 39px;
+}
+
+.navigation_container_discount{
+    margin: 0;
+    padding: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 20px;
+}
+
+.container_header_button{
+    display: block;
+    margin: 0;
+    padding: 25;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 25px;
+    color: #FFFFFF;
+    background: none;
+    border-radius: 50px;
+    border: none;
+}
+
+.food_main{
+    width: 1900px;
+    min-height: 900px; /*минимальная высота*/
+    text-align: center;
+}
+
+.container_catalog{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.catalog_title{
+    margin: 0;
+    padding: 0;
+    font-size: 45px;
+    line-height: 55px;
+    color: #000000;
+}
+
+.catalog_food{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    margin-left: 15px;
+    margin-top: 45px;
+    padding: 0;
+    gap: 40px 30px;
+    list-style: none;
+}
+
+.catalog_item{
+    width: 450px;
+}
+
+.catalog_name{
+    margin: 0;
+    padding: 0;
+    padding-top: 15px;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 45px;
+    color: #000000;
+}
+
+.food_footer{
+    width: 1900px;
+    min-height: 450px;
+    text-align: center;
+    background-image: linear-gradient(0deg, #EDA418 40%, rgba(237, 164, 24, 0) 100%);
+}
+
+.footer_list{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    padding-top: 160px;
+    gap: 100px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    justify-content: center;
+    list-style: none;
+}
+
+.footer_title{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #000000;
+}
+
+.footer_list2{
+    margin: 0;
+    padding: 0;
+    padding-top: 20px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    list-style: none;
+}
+
+.footer_text{
+    padding-top: 25px;
+}
+
+.footer_contact{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+    list-style: none;
+    padding-top: 25px;
+}
+
+.footer_img{
+    display: block;
+}
